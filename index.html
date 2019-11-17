@@ -10,23 +10,23 @@
     <title>HTML5 et Javascript : codage d’un player audio binaural 3D pour mesurer la qualité subjective.</title>
 
 	 <!-- Bootstrap core CSS -->
-    <link href="/PlayerAudio3D/css/irt.css" rel="stylesheet">
+    <link href="/PlayerAudio3D-G1-6/css/irt.css" rel="stylesheet">
 	
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="/PlayerAudio3D/css/jquery-ui.min.css">
-	<link rel="stylesheet" href="/PlayerAudio3D/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="/PlayerAudio3D-G1-6/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/PlayerAudio3D-G1-6/css/bootstrap-select.min.css">
 
     <!-- jQuery -->
-    <script src="/PlayerAudio3D/js/jquery.min.js "></script>
+    <script src="/PlayerAudio3D-G1-6/js/jquery.min.js "></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/PlayerAudio3D/js/bootstrap.min.js "></script>
+    <script src="/PlayerAudio3D-G1-6/js/bootstrap.min.js "></script>
 
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="/PlayerAudio3D/js/bootstrap-select.min.js"></script>
+	<script src="/PlayerAudio3D-G1-6/js/bootstrap-select.min.js"></script>
 
 	<!-- bogJS Framework -->
-	<script src="/PlayerAudio3D/js/bogJS-latest.js"></script>
+	<script src="/PlayerAudio3D-G1-6/js/bogJS-latest.js"></script>
 
 
 </head>
@@ -38,20 +38,20 @@
 
         <!-- Page Content -->
         <h3>HTML5 et Javascript : codage d’un player audio binaural 3D pour mesurer la qualité subjective.</h3>
-        <img class="img-responsive text-center" src="/PlayerAudio3D/img/spiderman_homecoming.jpg" style="width: 75%; margin-left: auto; margin-right: auto; margin-bottom: 10px;"/>
+        <img class="img-responsive text-center" src="/PlayerAudio3D-G1-6/img/spiderman_homecoming.jpg" style="width: 75%; margin-left: auto; margin-right: auto; margin-bottom: 10px;"/>
 
         <select id="switchPanningMode" class="selectpicker" data-width="70px">
-          <option data-content="<img src='/PlayerAudio3D/img/headphones.png' style='height: 25px;'/>">Headphones</option>
-          <option data-content="<img src='/PlayerAudio3D/img/stereo.png' style='height: 25px;'/>">Stereo</option>
+          <option data-content="<img src='/PlayerAudio3D-G1-6/img/headphones.png' style='height: 25px;'/>">Headphones</option>
+          <option data-content="<img src='/PlayerAudio3D-G1-6/img/stereo.png' style='height: 25px;'/>">Stereo</option>
         </select>
 
 
         <audio id="drama_audio"
-               poster="/PlayerAudio3D/img/spiderman_homecoming.jpg"
+               poster="/PlayerAudio3D-G1-6/img/spiderman_homecoming.jpg"
                controls
                controlsList="nodownload"
                style="width: 85%">
-               <source src="/PlayerAudio3D/media/spider5ch.ogg"
+               <source src="/PlayerAudio3D-G1-6/media/spider5ch.ogg"
                        type="audio/ogg codecs=vorbis">
            
         </audio>
@@ -76,7 +76,7 @@
         var drama_audio = document.getElementById('drama_audio');
 		var reader = new SceneReader();
 		
-        om = new ObjectManager('/PlayerAudio3D/scenes/spider.spatdif', ctx,
+        om = new ObjectManager('/PlayerAudio3D-G1-6/scenes/spider.spatdif', ctx,
                 reader, drama_audio, 5);
 				
         om.setPanningType("HRTF");
